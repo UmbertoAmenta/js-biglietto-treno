@@ -12,17 +12,17 @@ const userAge = Number(prompt("Inserisci la tua età"))
 // Chiedere la distanza (km) che si vuole percorrere
 const userReach = Number(prompt("Indica quanti <km> percorrerai sul treno per raggiungere la tua meta"))
     
-// /*
-    console.log(userAge + "anni", userReach + "km")
-//  */
+
+console.log(userAge + "anni", userReach + "km")
+
 
 
 // Calcolare il prezzo totale
 const ticketFullPrice = userReach * 0.21
 
-// /*
-    console.log(ticketFullPrice +"€")
-// */
+
+console.log(ticketFullPrice +"€")
+
 
 
 // Applicare uno sconto del
@@ -41,13 +41,13 @@ if (userAge < 18) {
     promo = " è pari a"
 }
 
-// /*
-    console.log("prezzo finale", ticketFinalPrice.toFixed(2) + "€")
-// */
+
+console.log("prezzo finale", ticketFinalPrice.toFixed(2) + "€")
+
 
 
 // Mostrare all'utente il prezzo del biglietto (2 decimali)
-if (confirm(`${"L'importo del biglietto"}${promo} ${ticketFinalPrice.toFixed(2)}${"€"}`)) {
+if (confirm(`L'importo del biglietto${promo} ${ticketFinalPrice.toFixed(2)}€`)) {
     alert("Puoi pagare e ritirare il biglietto. Buon viaggio")
 } else {
     alert("Ci spiace non poterti essere d'aiuto.")
